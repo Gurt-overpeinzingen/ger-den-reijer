@@ -52,7 +52,34 @@ text-decoration:underline;
 
 </style>
 </head>
+</div>
 
+<script>
+
+const zoekveld = document.getElementById("zoekveld");
+
+zoekveld.addEventListener("keyup", function() {
+
+let filter = zoekveld.value.toLowerCase();
+
+let items = document.querySelectorAll(".column-item");
+
+items.forEach(item => {
+
+let tekst = item.textContent.toLowerCase();
+
+if (tekst.includes(filter)) {
+item.style.display = "";
+}
+else {
+item.style.display = "none";
+}
+
+});
+
+});
+
+</script>
 <body>
 
 <header>

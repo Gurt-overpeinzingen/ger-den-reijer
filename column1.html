@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
 <meta charset="utf-8">
-<title>Welkom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Welkom op mijn website</title>
+
 <style>
 
-a{
+body{
+background:black;
+color:white;
+font-family:Arial,Helvetica,sans-serif;
+margin:0;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 40px;
+}
+
+.logo a{
 color:white;
 text-decoration:none;
+font-size:36px;
+font-weight:bold;
 }
 
-a:hover{
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+}
+
+nav a:hover{
 text-decoration:underline;
+}
+
+.content{
+max-width:900px;
+margin:auto;
+padding:60px;
+line-height:1.8;
+font-size:20px;
+}
+
+h1{
+font-size:48px;
 }
 
 </style>
 
-a:hover{
-text-decoration:underline;
-}
-
-</style>
 </head>
 
 <body>
-<nav style="margin-bottom:50px;">
 
-<a href="index.html">Home</a> |
-<a href="columns.html">Columns</a> |
+<header>
+
+<div class="logo">
+<a href="index.html">Ger den Reijer</a>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="columns.html">Columns</a>
 <a href="contact.html">Contact</a>
-
 </nav>
-<body style="background:black;color:white;font-family:Arial;text-align:center;padding-top:120px;">
 
-<h1>Ger den Reijer</h1>
+</header>
 
-<p style="font-size:28px;">
-✉ gerit85@gmail.com
-</p>
-
-</body>
+<div class="content">
 
 <h1>Welkom op mijn website</h1>
 
@@ -48,8 +82,10 @@ Dit is mijn eerste officiële column.
 </p>
 
 <p>
-Hier komt de rest van de tekst.
+Hier komt later de volledige tekst van de column te staan.
 </p>
+
+</div>
 
 </body>
 </html>

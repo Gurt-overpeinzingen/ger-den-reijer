@@ -97,66 +97,21 @@ Ger den Reijer
 </header>
 
 <div class="content">
-Hoe voeg je een nieuwe column toe?
-Stel dat je morgen een nieuwe column schrijft:
-De burgemeester en de goudvis
-Stap 1. Nieuwe column maken
-Open template-column.html
-Klik op het potloodje.
-Kopieer de volledige inhoud.
-Klik op + → New file.
-Geef als naam:
-columns/columns/de-burgemeester-en-de-goudvis.html
-Plak de inhoud van het template.
-Verander:
-<title>TITEL</title>
-in:
-<title>De burgemeester en de goudvis</title>
-Verander:
-<h1>TITEL</h1>
-in:
-<h1>De burgemeester en de goudvis</h1>
-Plak je columntekst.
-Commit.
-Stap 2. Homepage aanpassen
-Open index.html.
-Zoek het blok van de huidige nieuwste column:
-Inktvis in de gemeenteraad?
-en vervang dat door:
-<h3>
-<a href="columns/columns/de-burgemeester-en-de-goudvis.html"
-style="color:white;text-decoration:none;">
-De burgemeester en de goudvis
-</a>
-</h3>
-
-<p>
-Hier de eerste 2 à 3 zinnen van je nieuwe column.
-</p>
-
-<p>
-<a href="columns/columns/de-burgemeester-en-de-goudvis.html"
-style="color:white;">
-Lees verder →
-</a>
-</p>
-Dat duurt minder dan een minuut.
-Stap 3. Oude column naar Columns verplaatsen
-Open columns.html.
-Voeg bovenaan de lijst toe:
-<p>
-<a class="column-link"
-href="columns/columns/inktvis-in-de-gemeenteraad.html">
-Inktvis in de gemeenteraad?
-</a>
-</p>
-Daaronder blijven de oudere columns staan.
-Resultaat:
-Columns
-
-Inktvis in de gemeenteraad?
-Welkom op mijn website
-...
+<input
+type="text"
+id="zoekveld"
+placeholder="🔍 Zoek een column..."
+onkeyup="zoekColumns()"
+style="
+width:100%;
+max-width:500px;
+padding:12px;
+font-size:18px;
+background:#111;
+color:white;
+border:1px solid #444;
+margin-bottom:30px;
+">
 
   <input
 type="text"
